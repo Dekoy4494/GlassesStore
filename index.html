@@ -1,47 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ba-starter</title>
+    <title>Glasses Store</title>
 
     <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
     <link rel="stylesheet" href="styles/app.css">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display|Poppins:400,500|Vollkorn&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
     <link rel="icon" href="favicon.ico">
 </head>
+
 <body>
 
-    <header class="ba-header">
+    <header class="gs-header">
         <div class="container">
+            <div class="gs-header__wrapper">
+                <div class="gs-header__top">
+                    <ul class="gs-social">
+                        <li class="gs-social__item">
+                            <a href="https://www.instagram.com/?hl=uk" class="gs-social__link">
+                                <img src="img/ion-social-instagram-outline.png" alt="insta" class="gs-social__img">
+                            </a>
+                        </li>
+                        <li class="gs-social__item">
+                            <a href="https://www.pinterest.com" class="gs-social__link">
+                                <img src="img/ion-social-pinterest-outline.png" alt="pinterest" class="gs-social__img">
+                            </a>
+                        </li>
+                        <li class="gs-social__item">
+                            <a href="https://www.facebook.com/" class="gs-social__link">
+                                <img src="img/ion-social-facebook.png" alt="facebook" class="gs-social__img">
+                            </a>
+                        </li>
+                    </ul>
 
-            <a href="#" class="ba-logo"></a>
+                    <a href="#" class="gs-logo">KALLYAS</a>
 
-            <nav>
-                <ul class="ba-menu">
-                    <li class="ba-menu__item">
-                        <a href="#" class="ba-menu__link">item 1</a>
-                    </li>
-                    <li class="ba-menu__item">
-                        <a href="#" class="ba-menu__link">item 2</a>
-                    </li>
-                    <li class="ba-menu__item">
-                        <a href="#" class="ba-menu__link">item 3</a>
-                    </li>
-                    <li class="ba-menu__item">
-                        <a href="#" class="ba-menu__link">item 4</a>
-                    </li>
-                </ul>
-            </nav>
-
+                    <div class="gs-personal">
+                        <button class="gs-personal__btn">
+                            <img src="img/ion-ios-search-strong.png" alt="search">
+                        </button>
+                        <form action="" class="input-hide">
+                            <input type="search" class="input-hide" placeholder="Search something...">
+                            <button class="gs-personal__btn">
+                                <img src="img/ion-ios-search-strong.png" alt="search">
+                            </button>
+                        </form>
+                        <a href="" class="personal__account">
+                            <img src="img/ion-ios-person.png" alt="my account">
+                        </a>
+                        <a href="" class="personal__Cart">
+                            <img src="img/ion-ios-cart.png" alt="shopCart">
+                        </a>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="gs-menu">
+                        <li class="gs-menu__item">
+                            <a href="#" class="gs-menu__link">men</a>
+                        </li>
+                        <li class="gs-menu__item">
+                            <a href="#" class="gs-menu__link">women</a>
+                        </li>
+                        <li class="gs-menu__item">
+                            <a href="#" class="gs-menu__link">brands</a>
+                        </li>
+                        <li class="gs-menu__item">
+                            <a href="#" class="gs-menu__link">lookbook</a>
+                        </li>
+                        <li class="gs-menu__item">
+                            <a href="#" class="gs-menu__link">sale</a>
+                        </li>
+                        <li class="gs-menu__item">
+                            <a href="#" class="gs-menu__link">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="ba-section">
+        <section class="gs-topsales">
             <div class="container">
+                <div class="gs-slider gs-topsales__wrapper">
+                    <!-- START GS-PRODUCT -->
+                    <div class="gs-slide">
+                        <h2 class="gs-topsales__title">
+                            Guess
+                        </h2>
+                        <img src="img/Guess.png" alt="guess" class="gs-topsales__img">
+                        <p class="gs-topsales__subtitle">
+                            it's your look through your instagram lens
+                        </p>
+                        <a class="gs-topsales__btn">
+                            explore now
+                        </a>
+                    </div>
+                    <!-- END GS-PRODUCT -->
+                    <!-- START GS-PRODUCT -->
+                    <div class="gs-slide">
+                        <h2 class="gs-topsales__title">
+                            RayBan
+                        </h2>
+                        <img src="img/Guess.png" alt="guess" class="gs-topsales__img">
+                        <p class="gs-topsales__subtitle">
+                            it's your look through your instagram lens
+                        </p>
+                        <a class="gs-topsales__btn">
+                            explore now
+                        </a>
+                    </div>
+                    <!-- END GS-PRODUCT -->
+                    <!-- START GS-PRODUCT -->
+                    <div class="gs-slide">
+                        <h2 class="gs-topsales__title">
+                            Gucci
+                        </h2>
+                        <img src="img/Guess.png" alt="guess" class="gs-topsales__img">
+                        <p class="gs-topsales__subtitle">
+                            it's your look through your instagram lens
+                        </p>
+                        <a class="gs-topsales__btn">
+                            explore now
+                        </a>
+                    </div>
+                    <!-- END GS-PRODUCT -->
+                </div>
+            </div>
+        </section>
 
+        <section class="gs-popular">
+            <div class="ba-row gs-popular__wrapper">
+                <div class="popular-bigblock ba-col-6">
+                    <img src="img/catEye.jpg" alt="catEye">
+                    <div class="popular-bigblock__info">
+                        <h2 class="popular-bigblock__title">
+                            Cat eye
+                        </h2>
+                        <p class="popular-bigblock__price">
+                            $32.00
+                        </p>
+                        <a href="" class="popular-bigblock__details">
+                            Details
+                        </a>
+                    </div>
+                </div>
+                <div class="popular-blocks ba-col-6">
+                    <div class="ba-row">
+                        <div class="popular-smallblock ba-col-6">
+                            <img src="img/RoundGlasses.jpg" alt="RoundGlasses">
+                            <div class="popular__info">
+                                <h2 class="popular__title">
+                                    Round glasses
+                                </h2>
+                                <p class="popular__price">
+                                    $ 44.00
+                                </p>
+                                <a href="" class="popular__details">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="popular-smallblock ba-col-6">
+                            <img src="img/squareGlasses.png" alt="squareGlasses">
+                            <div class="popular__info">
+                                <h2 class="popular__title">
+                                    Square sunglasses
+                                </h2>
+                                <p class="popular__price">
+                                    $ 59.00
+                                </p>
+                                <a href="" class="popular__details">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="popular-smallblock ba-col-6">
+                            <img src="img/RoundFlower.jpg" alt="RoundFlower">
+                            <div class="popular__info">
+                                <h2 class="popular__title">
+                                    Round flower glasses
+                                </h2>
+                                <p class="popular__price">
+                                    $ 24.00
+                                </p>
+                                <a href="" class="popular__details">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="popular-smallblock ba-col-6">
+                            <img src="img/hairTies.jpg" alt="hairTies">
+                            <div class="popular__info">
+                                <h2 class="popular__title">
+                                    Hair Elastics 6 pack
+                                </h2>
+                                <p class="popular__price">
+                                    $33.00
+                                </p>
+                                <a href="" class="popular__details">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gs-arrivals">
+            <div class="container">
+                <h2 class="gs-arrivals__title">
+                    New Arrivals
+                </h2>
+                <div class="gs-arrivals__items ba-row">
+                    <div class="gs-arrivals__item ba-col-4">
+                        <div class="gs-arrivals__item-card">
+                            <img src="img/glasses/Layer 509.png" alt="glasses1" class="gs-arrivals__item-img">
+                            <img class='item-card__logo'src="img/kisspng-ray-ban-wayfarer-sunglasses-ray-ban-predator-2-rayban-logo-5b4d4d9bcdd243.7897997715317927958431.png" alt="rayban">
+                        </div>
+                        <div class="gs-arrivals__item-info">
+                            <h3 class="gs-arrivals__item-title">RayBan M Classic</h3>
+                            <p class="gs-arrivals__item-price">$118</p>
+                        </div>
+                    </div>
+                    <div class="gs-arrivals__item ba-col-4">
+                        <div class="gs-arrivals__item-card">
+                            <img src="img/glasses/Layer 510.png" alt="glasses2" class="gs-arrivals__item-img">
+                            <img class='item-card__logo'src="img/kisspng-versace-logo-valentino-spa-fashion-design-italian-gucci-5acd0c12b847b2.1636583515233874107548.png" alt="versace">
+                        </div>
+                        <div class="gs-arrivals__item-info">
+                            <h3 class="gs-arrivals__item-title">Versace Holbrook</h3>
+                            <p class="gs-arrivals__item-price">$156</p>
+                        </div>
+                    </div>
+                    <div class="gs-arrivals__item ba-col-4">
+                        <div class="gs-arrivals__item-card">
+                            <img src="img/glasses/Layer 511.png" alt="glasses" class="gs-arrivals__item-img">
+                            <img class='item-card__logo'src="img/kisspng-brand-gucci-oysho-logo-gucci-belt-5b5e71b3573206.3156902015329161473572.png" alt="gucci">
+                        </div>
+                        <div class="gs-arrivals__item-info">
+                            <h3 class="gs-arrivals__item-title">Gucci Gascan</h3>
+                            <p class="gs-arrivals__item-price">$106</p>
+                        </div>
+                    </div>
+                    <div class="gs-arrivals__item ba-col-4">
+                        <div class="gs-arrivals__item-card">
+                            <img src="img/glasses/Layer 512.png" alt="glasses" class="gs-arrivals__item-img">
+                            <img class='item-card__logo'src="img/kisspng-oakley-inc-logo-decal-glasses-tavel-5b4ea95a161b08.6816907715318818180906.png" alt="oakley">
+                        </div>
+                        <div class="gs-arrivals__item-info">
+                            <h3 class="gs-arrivals__item-title">Oakley Justin</h3>
+                            <p class="gs-arrivals__item-price">$146</p>
+                        </div>
+                    </div>
+                    <div class="gs-arrivals__item ba-col-4">
+                        <div class="gs-arrivals__item-card">
+                            <img src="img/glasses/Layer 514.png" alt="glasses" class="gs-arrivals__item-img">
+                            <img class='item-card__logo'src="img/kisspng-louis-vuitton-sarasota-chanel-fashion-monogram-louis-vuitton-logo-5b361d8acd5342.151589851530273162841.png" alt="MK">
+                        </div>
+                        <div class="gs-arrivals__item-info">
+                            <h3 class="gs-arrivals__item-title">LV Slater</h3>
+                            <p class="gs-arrivals__item-price">$94</p>
+
+                        </div>
+                    </div>
+                    <div class="gs-arrivals__item ba-col-4">
+                        <div class="gs-arrivals__item-card">
+                            <img src="img/glasses/Layer 515.png" alt="glasses" class="gs-arrivals__item-img">
+                            <img class='item-card__logo'src="img/kisspng-oakley-inc-logo-decal-glasses-tavel-5b4ea95a161b08.6816907715318818180906.png" alt="oakley">
+                        </div>
+                        <div class="gs-arrivals__item-info">
+                            <h3 class="gs-arrivals__item-title">Amelia E. Alexis</h3>
+                            <p class="gs-arrivals__item-price">$98</p>
+
+                        </div>
+                    </div>
+                    <div class="gs-arrivals__item ba-col-4">
+                        <div class="gs-arrivals__item-card">
+                            <img src="img/glasses/Layer 509.png" alt="glasses1" class="gs-arrivals__item-img">
+                            <img class='item-card__logo'src="img/kisspng-versace-logo-valentino-spa-fashion-design-italian-gucci-5acd0c12b847b2.1636583515233874107548.png" alt="versace">
+                        </div>
+                        <div class="gs-arrivals__item-info">
+                            <h3 class="gs-arrivals__item-title">Versace M Classic</h3>
+                            <p class="gs-arrivals__item-price">$118</p>
+                        </div>
+                    </div>
+                    <div class="gs-arrivals__item ba-col-4">
+                        <div class="gs-arrivals__item-card">
+                            <img src="img/glasses/Layer 510.png" alt="glasses2" class="gs-arrivals__item-img">
+                            <img class='item-card__logo'src="img/kisspng-oakley-inc-logo-decal-glasses-tavel-5b4ea95a161b08.6816907715318818180906.png" alt="oakley">
+                        </div>
+                        <div class="gs-arrivals__item-info">
+                            <h3 class="gs-arrivals__item-title">Oakley Holbrook</h3>
+                            <p class="gs-arrivals__item-price">$156</p>
+                        </div>
+                    </div>
+                    <div class="gs-arrivals__item ba-col-4">
+                        <div class="gs-arrivals__item-card">
+                            <img src="img/glasses/Layer 511.png" alt="glasses" class="gs-arrivals__item-img">
+                            <img class='item-card__logo'src="img/kisspng-ray-ban-wayfarer-sunglasses-ray-ban-predator-2-rayban-logo-5b4d4d9bcdd243.7897997715317927958431.png" alt="rayban">
+                        </div>
+                        <div class="gs-arrivals__item-info">
+                            <h3 class="gs-arrivals__item-title">rayBan Gascan</h3>
+                            <p class="gs-arrivals__item-price">$106</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="gs-arrivals__btn">LOAD MORE</button>
             </div>
         </section>
     </main>
@@ -49,6 +328,13 @@
     <footer class="ba-footer">
         <div class="container"></div>
     </footer>
-    
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script src='js/app.js'></script>
 </body>
+
 </html>

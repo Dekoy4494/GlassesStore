@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Brandon Grotesque Regular";
+  src: url("../fonts/BrandonGrotesque-Regular.eot");
+  src: url("../fonts/BrandonGrotesque-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/BrandonGrotesque-Regular.woff") format("woff"), url("../fonts/BrandonGrotesque-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Brandon Grotesque Medium";
+  src: url("../fonts/BrandonGrotesque-Medium.eot");
+  src: url("../fonts/BrandonGrotesque-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/BrandonGrotesque-Medium.woff") format("woff"), url("../fonts/BrandonGrotesque-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }

@@ -1,5 +1,5 @@
 // variables
-$container: 1170px;
+$container: 1270px;
 $gap: 15px;
 $col: 12;
 $colWidth: 100% / $col;
@@ -25,8 +25,7 @@ $btnBorderColor: $primaryColor;
 .ba-row{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -$gap;
-    margin-right: -$gap;
+    
 }
 
 .ba-row + .ba-row{
