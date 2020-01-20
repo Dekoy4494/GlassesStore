@@ -342,10 +342,27 @@ nav::before {
   overflow: hidden; }
   .gs-arrivals__item-title {
     font-family: "Vollkorn", serif;
-    font-size: 1.725rem; }
+    font-size: 2.725rem;
+    margin: 0;
+    margin-top: -4.3rem;
+    color: #a49959; }
   .gs-arrivals__item-price {
     font-family: "Poppins", sans-serif;
-    font-size: 2rem; }
+    font-size: 2.5rem;
+    margin-top: 0;
+    color: #a49959; }
+  .gs-arrivals__item-link {
+    text-decoration: none;
+    text-align: center;
+    padding: 0.7rem 1.725rem;
+    background: #a49959;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.725rem;
+    font-weight: 500;
+    letter-spacing: 0.12rem; }
 
 .gs-arrivals__title {
   font-family: "Playfair Display", serif;
@@ -380,13 +397,13 @@ nav::before {
   position: relative;
   text-align: center;
   overflow: hidden;
-  height: 381px; }
+  height: 350px; }
 
 .gs-arrivals__btn {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.12em;
-  margin: 60px 0 400px 0;
+  margin: 60px 0 300px 0;
   text-align: center;
   border: 2px solid #e7e8ea;
   color: #aeb0b5;
@@ -399,3 +416,90 @@ nav::before {
 
 .gs-arrivals__item:hover .gs-arrivals__item-info {
   transform: translateY(100%); }
+
+.gs-partners__title {
+  font-family: "Playfair Display", serif;
+  font-size: 44px;
+  text-align: center;
+  margin: 50px 0 80px 0; }
+
+.gs-partners__img {
+  width: 300px;
+  opacity: 0.7; }
+
+.gs-footer {
+  text-align: center; }
+  .gs-footer-baner {
+    padding-top: 80px;
+    height: 700px;
+    overflow: hidden; }
+    .gs-footer-baner img {
+      width: 100%;
+      margin-top: -50px; }
+  .gs-footer-info {
+    color: white;
+    font-family: "Brandon Grotesque Regular";
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 1rem; }
+    .gs-footer-info i {
+      margin-right: 15px;
+      color: rgba(189, 185, 183, 0.849); }
+  .gs-footer-bot {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 15px; }
+  .gs-footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 75px 0; }
+  .gs-footer-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left; }
+  .gs-footer-social .gs-social {
+    margin-top: 20px; }
+  .gs-footer-social .gs-logo {
+    text-decoration: none;
+    font-family: "Brandon Grotesque Medium";
+    color: black;
+    font-size: 1.875rem;
+    letter-spacing: 0.14em; }
+  .gs-footer-item {
+    margin: 10px 0; }
+  .gs-footer__text {
+    text-decoration: none;
+    margin: 5px 0;
+    text-transform: uppercase;
+    font-family: "Brandon Grotesque Regular";
+    font-size: 0.725rem;
+    color: black; }
+
+.gs-form-email {
+  text-align: left; }
+  .gs-form-email input {
+    border: none;
+    background-color: black;
+    width: 280px;
+    padding: 1.2rem 0 1.2rem 1rem; }
+    .gs-form-email input::placeholder {
+      text-transform: uppercase;
+      color: gray;
+      font-size: 0.7rem; }
+
+.gs-form-btn {
+  border: none;
+  background: black;
+  color: gray;
+  text-transform: uppercase;
+  padding: 1.2rem;
+  font-size: 0.7rem; }
+
+.gs-form__title {
+  text-transform: uppercase;
+  font-family: "Brandon Grotesque Regular";
+  font-weight: 300;
+  font-size: 0.8rem; }
