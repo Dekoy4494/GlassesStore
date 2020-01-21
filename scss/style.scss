@@ -19,7 +19,71 @@
     }
   }
 }
+q::after,
+q::before{
+  content: '';
+}
+//logo hover effects
 
+$primary_font: 'Josefin Sans', sans-serif;
+$first_color: #a49959;
+$second_color: white;
+
+#text {
+  font-family: $primary_font;
+  font-size: 6em;
+  line-height: 1em;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-100%);
+  &:hover {
+    cursor: default;
+  }
+  
+  .wrapper {
+    display: inline-block;
+    top: -900px;
+    position: relative;
+    height: 150px; /* default */
+    width: 90px; /* default */
+    transition: ease 0.3s all;
+    
+    span {
+      position: absolute;
+      top:0;
+      right:0;
+
+      transition: ease 0.3s all;
+      
+      &.letter-2 {
+        color: $first_color;
+      }
+
+      &.letter-1 {
+        color: $second_color;
+        z-index: 1;
+        
+        &:hover {
+           top: -3px;
+           right: -3px;
+           
+           ~ .letter-2 {
+             top: 3px;
+             right: 3px;
+           }
+        }
+      }
+      
+      &.space {
+        padding: 0;
+        min-width: 30px;
+        display: inline-block;
+      }
+    }
+  }
+}
+//end logo hover effects
 .gs-social {
   display: flex;
   list-style: none;
@@ -28,6 +92,15 @@
 
   &__item + &__item {
     margin-left: 50px;
+  }
+
+  &__link i {
+    color: #a49959;
+    font-size: 1.5rem;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
 
@@ -55,7 +128,7 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  padding: 66px 0 25px 0;
+  padding: 0px 0 25px 0;
   margin: 0;
 
   &__item + &__item {
@@ -116,14 +189,66 @@ nav::before {
   }
 
   &__btn {
-    padding: 1.375rem 2rem;
-    background: #a49959;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 5%;
+    border-radius: 5px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     letter-spacing: 0.12rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #a49959;
+    font-size: 24px;
+    color: #a49959;
+    transition: 0.5s;
+    overflow: hidden;
+    &:hover {
+      color: #fff;
+    }
+    & q {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(167, 122, 79, 0.5);
+      transition: 0.5s;
+      z-index: -1;
+    }
+    & q:nth-child(1) {
+      top: -100%;
+      left: -100%;
+    }
+    &:hover q:nth-child(1) {
+      top: 0;
+      left: 0;
+    }
+    & q:nth-child(2) {
+      bottom: -100%;
+      left: -100%;
+    }
+    &:hover q:nth-child(2) {
+      bottom: 0;
+      left: 0;
+    }
+    & q:nth-child(3) {
+      top: -100%;
+      right: -100%;
+    }
+    &:hover q:nth-child(3) {
+      top: 0;
+      right: 0;
+    }
+    & q:nth-child(4) {
+      bottom: -100%;
+      right: -100%;
+    }
+    &:hover q:nth-child(4) {
+      bottom: 0;
+      right: 0;
+    }
   }
 }
 //=========SLIDER-CUSTOM=======//
@@ -133,7 +258,7 @@ nav::before {
 }
 
 .gs-slide {
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 }
 
 .slick-prev,
@@ -232,16 +357,67 @@ nav::before {
   }
 
   &__details {
-    text-decoration: none;
-    text-align: center;
-    padding: 0.7rem 1.725rem;
-    background: #a49959;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 5%;
+    border-radius: 5px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     letter-spacing: 0.12rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #a49959;
+    font-size: 16px;
+    color: #a49959;
+    transition: 0.5s;
+    overflow: hidden;
+    &:hover {
+      color: #fff;
+    }
+    & q {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(167, 122, 79, 0.5);
+      transition: 0.5s;
+      z-index: -1;
+    }
+    & q:nth-child(1) {
+      top: -100%;
+      left: -100%;
+    }
+    &:hover q:nth-child(1) {
+      top: 0;
+      left: 0;
+    }
+    & q:nth-child(2) {
+      bottom: -100%;
+      left: -100%;
+    }
+    &:hover q:nth-child(2) {
+      bottom: 0;
+      left: 0;
+    }
+    & q:nth-child(3) {
+      top: -100%;
+      right: -100%;
+    }
+    &:hover q:nth-child(3) {
+      top: 0;
+      right: 0;
+    }
+    & q:nth-child(4) {
+      bottom: -100%;
+      right: -100%;
+    }
+    &:hover q:nth-child(4) {
+      bottom: 0;
+      right: 0;
+    }
   }
 
   &-bigblock {
@@ -275,21 +451,72 @@ nav::before {
       font-weight: 500;
       text-align: center;
       margin: 0;
-      padding: 10px 0 25px;
+      padding: 0px 0 50px;
       color: #e6e6c2;
     }
-
+    // button hover //
     &__details {
-      text-decoration: none;
-      text-align: center;
-      padding: 1rem 2rem;
-      background: #a49959;
-      color: white;
-      text-transform: uppercase;
-      border-radius: 5%;
+      border-radius: 5px;
       font-family: "Poppins", sans-serif;
       font-weight: 500;
       letter-spacing: 0.12rem;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 180px;
+      height: 60px;
+      text-align: center;
+      line-height: 60px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 2px solid #a49959;
+      font-size: 24px;
+      color: #a49959;
+      transition: 0.5s;
+      overflow: hidden;
+      &:hover {
+        color: #fff;
+      }
+      & q {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(167, 122, 79, 0.5);
+        transition: 0.5s;
+        z-index: -1;
+      }
+      & q:nth-child(1) {
+        top: -100%;
+        left: -100%;
+      }
+      &:hover q:nth-child(1) {
+        top: 0;
+        left: 0;
+      }
+      & q:nth-child(2) {
+        bottom: -100%;
+        left: -100%;
+      }
+      &:hover q:nth-child(2) {
+        bottom: 0;
+        left: 0;
+      }
+      & q:nth-child(3) {
+        top: -100%;
+        right: -100%;
+      }
+      &:hover q:nth-child(3) {
+        top: 0;
+        right: 0;
+      }
+      & q:nth-child(4) {
+        bottom: -100%;
+        right: -100%;
+      }
+      &:hover q:nth-child(4) {
+        bottom: 0;
+        right: 0;
+      }
     }
   }
 
@@ -337,18 +564,68 @@ nav::before {
     }
 
     &-link {
-      text-decoration: none;
-
-      text-align: center;
-      padding: 0.7rem 1.725rem;
-      background: #a49959;
-      color: white;
-      text-transform: uppercase;
-      border-radius: 5%;
+      border-radius: 5px;
       font-family: "Poppins", sans-serif;
-      font-size: 1.725rem;
       font-weight: 500;
       letter-spacing: 0.12rem;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 55px;
+      text-align: center;
+      line-height: 55px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 2px solid #a49959;
+      font-size: 24px;
+      color: #a49959;
+      transition: 0.5s;
+      overflow: hidden;
+      &:hover {
+        color: #fff;
+      }
+      & q {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(167, 122, 79, 0.5);
+        transition: 0.5s;
+        z-index: -1;
+      }
+      & q:nth-child(1) {
+        top: -100%;
+        left: -100%;
+      }
+      &:hover q:nth-child(1) {
+        top: 0;
+        left: 0;
+      }
+      & q:nth-child(2) {
+        bottom: -100%;
+        left: -100%;
+      }
+      &:hover q:nth-child(2) {
+        bottom: 0;
+        left: 0;
+      }
+      & q:nth-child(3) {
+        top: -100%;
+        right: -100%;
+      }
+      &:hover q:nth-child(3) {
+        top: 0;
+        right: 0;
+      }
+      & q:nth-child(4) {
+        bottom: -100%;
+        right: -100%;
+      }
+      &:hover q:nth-child(4) {
+        bottom: 0;
+        right: 0;
+      }
     }
   }
 
@@ -500,6 +777,10 @@ nav::before {
 
   &-item {
     margin: 10px 0;
+    &:hover{
+
+      transform: scale(1.3);
+    }
   }
   &__text {
     text-decoration: none;
@@ -508,20 +789,20 @@ nav::before {
     font-family: "Brandon Grotesque Regular";
     font-size: 0.725rem;
     color: black;
+    
   }
 }
 
 .gs-form {
-
-  &-email{
+  &-email {
     text-align: left;
-    & input{
+    & input {
       border: none;
       background-color: black;
       width: 280px;
       padding: 1.2rem 0 1.2rem 1rem;
-      
-      &::placeholder{
+
+      &::placeholder {
         text-transform: uppercase;
         color: gray;
         font-size: 0.7rem;
@@ -529,7 +810,7 @@ nav::before {
     }
   }
 
-  &-btn{
+  &-btn {
     border: none;
     background: black;
     color: gray;
@@ -538,11 +819,46 @@ nav::before {
     font-size: 0.7rem;
   }
 
-  
   &__title {
     text-transform: uppercase;
     font-family: "Brandon Grotesque Regular";
     font-weight: 300;
     font-size: 0.8rem;
+  }
+}
+
+//=======Hover Effects=====//
+
+.gs-menu__item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #a49959;
+
+    content: "";
+  }
+
+  &:hover::before {
+    animation: bg-animation;
+    opacity: 0.3;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    width: 10%;
+  }
+
+  100% {
+    width: 100%;
   }
 }
