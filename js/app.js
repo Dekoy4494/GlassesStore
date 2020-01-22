@@ -15,9 +15,9 @@ $(document).ready(function () {
 	});
 
 });
-//another slider
-$(document).ready(function () {
 
+$(document).ready(function () {
+//another slider
 	$('.gs-partners__slider').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
@@ -26,9 +26,18 @@ $(document).ready(function () {
 		dots: false,
 		autoplaySpeed: 500,
 		pauseOnFocus: true,
-	
+  });
+  //search-click
+  $("#showSearch").on('click', function() {
+    $('.gs-search-form').toggleClass('open');
 
-	});
+    if('.open') {
+        $('#showSearch i').toggleClass('fas fa-search')
+        $('#showSearch i').toggleClass('fas fa-times')
+    }
+});
+//parallax
+$('.parallax-window').parallax({imageSrc: './img/footer/banner.jpg'});
 });
 
 //hover effect logo//
@@ -90,3 +99,15 @@ outputLayers.then(() => {
       }, time);
     });
 });
+
+
+//email validator 
+
+function validate(form_id,email) {
+  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  var address = document.forms[form_id].elements[email].value;
+  if(reg.test(address) == false) {
+     alert('Enter correct e-mail');
+     return false;
+  }
+}

@@ -92,17 +92,10 @@
   .gs-header__top {
     display: flex;
     justify-content: space-between; }
-    .gs-header__top a {
-      position: relative;
-      text-decoration: none;
-      font-family: "Brandon Grotesque Medium";
-      color: white;
-      font-size: 1.875rem;
-      letter-spacing: 0.14em; }
 
 q::after,
 q::before {
-  content: ''; }
+  content: ""; }
 
 #text {
   font-family: "Josefin Sans", sans-serif;
@@ -160,16 +153,47 @@ q::before {
 .input-hide {
   display: none; }
 
+#showSearch {
+  background: none;
+  border: none;
+  outline: none; }
+
+.gs-search {
+  margin-left: auto; }
+  .gs-search-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    transform: translateY(-100%);
+    visibility: hidden;
+    transition: transform 0.3s; }
+    .gs-search-form.open {
+      top: 30%;
+      left: -40%;
+      transform: translateY(0);
+      visibility: visible;
+      box-shadow: 0px 9px 20px -6px rgba(0, 0, 0, 0.5); }
+  .gs-search__btn {
+    margin-left: auto;
+    border: none;
+    outline: none;
+    background: none; }
+
 .personal__Cart, .personal__account {
   margin-left: 50px; }
 
-.gs-personal__btn {
-  background: none;
-  border: none;
+.gs-personal {
+  position: relative;
+  display: flex;
+  list-style: none;
   padding: 0;
-  margin: 0;
-  cursor: default;
-  outline: none; }
+  margin: 0; }
+  .gs-personal i {
+    font-size: 1.3rem;
+    color: #a49959; }
 
 .gs-menu {
   list-style: none;
@@ -508,7 +532,8 @@ nav::before {
   position: relative; }
   .popular-smallblock img {
     width: 100%;
-    display: block; }
+    display: block;
+    height: 100%; }
 
 .gs-arrivals__item {
   position: relative;
@@ -606,6 +631,14 @@ nav::before {
   justify-content: center;
   transition: transform 0.4s;
   text-align: center; }
+  .gs-arrivals__item-info i {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 2.5rem; }
+    .gs-arrivals__item-info i:hover,
+    .gs-arrivals__item-info i :focus {
+      color: red; }
 
 .gs-arrivals__item-card {
   position: relative;
@@ -625,8 +658,7 @@ nav::before {
   background: none; }
 
 .item-card__logo {
-  width: 70px;
-  height: 70px; }
+  width: 70px; }
 
 .gs-arrivals__item:hover .gs-arrivals__item-info {
   transform: translateY(100%); }
@@ -637,9 +669,15 @@ nav::before {
   text-align: center;
   margin: 50px 0 80px 0; }
 
+.gs-partners-slide {
+  display: inline-flex !important;
+  align-items: center;
+  height: 300px; }
+
 .gs-partners__img {
   width: 300px;
-  opacity: 0.7; }
+  opacity: 0.7;
+  max-width: 100%; }
 
 .gs-footer {
   text-align: center; }
@@ -700,7 +738,8 @@ nav::before {
     border: none;
     background-color: black;
     width: 280px;
-    padding: 1.2rem 0 1.2rem 1rem; }
+    padding: 1.2rem 0 1.2rem 1rem;
+    color: gray; }
     .gs-form-email input::placeholder {
       text-transform: uppercase;
       color: gray;
@@ -712,13 +751,17 @@ nav::before {
   color: gray;
   text-transform: uppercase;
   padding: 1.2rem;
-  font-size: 0.7rem; }
+  font-size: 1rem; }
 
 .gs-form__title {
   text-transform: uppercase;
   font-family: "Brandon Grotesque Regular";
   font-weight: 300;
   font-size: 0.8rem; }
+
+.parallax-window {
+  min-height: 600px;
+  background: transparent; }
 
 .gs-menu__item {
   position: relative;
