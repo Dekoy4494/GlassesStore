@@ -4,6 +4,9 @@
   background-color: black;
   color: white;
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    padding-top: 20px;
+  }
 
   &__top {
     display: flex;
@@ -14,6 +17,18 @@ q::after,
 q::before {
   content: "";
 }
+
+.gs-logo__title {
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+  text-decoration: none;
+  font-family: "Brandon Grotesque Medium";
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 0.35em;
+}
+
 //logo hover effects
 
 $primary_font: "Josefin Sans", sans-serif;
@@ -21,6 +36,9 @@ $first_color: #a49959;
 $second_color: white;
 
 #text {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   font-family: $primary_font;
   font-size: 6em;
   line-height: 1em;
@@ -75,13 +93,21 @@ $second_color: white;
   }
 }
 //end logo hover effects
+
 .gs-social {
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 
   &__item + &__item {
+    @media screen and (max-width: 767px) {
+      margin: 0;
+      margin-top: 10px;
+    }
     margin-left: 50px;
   }
 
@@ -98,6 +124,7 @@ $second_color: white;
 .input-hide {
   display: none;
 }
+
 //search-hover
 #showSearch {
   background: none;
@@ -140,12 +167,19 @@ $second_color: white;
 .personal {
   &__Cart,
   &__account {
+    @media screen and (max-width: 767px) {
+      margin: 0 auto;
+      margin-top: 10px;
+    }
     margin-left: 50px;
   }
 }
 .gs-personal {
   position: relative;
   display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
   list-style: none;
   padding: 0;
   margin: 0;
@@ -198,13 +232,17 @@ nav::before {
 .gs-topsales {
   &__wrapper {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 20px;
   }
 
   &__title {
     margin: 0 0 80px 0;
     color: #cccccc;
     font-family: "Playfair Display", serif;
+    @media screen and (max-width: 767px) {
+      font-size: 2.75rem;
+      margin: 0 0 40px 0;
+    }
     font-size: 3.75rem;
     font-weight: 300;
   }
@@ -214,11 +252,14 @@ nav::before {
   }
   &__subtitle {
     margin: 0;
-    padding: 40px 0 60px 0;
+    padding: 25px 0 40px 0;
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     font-size: 1.625rem;
+    @media screen and (max-width: 767px) {
+      font-size: 1rem;
+    }
   }
 
   &__btn {
@@ -230,6 +271,12 @@ nav::before {
     transform: translate(-50%, -50%);
     width: 250px;
     height: 80px;
+    @media screen and (max-width: 767px) {
+      width: 150px;
+      height: 45px;
+      font-size: 12px;
+      line-height: 40px;
+    }
     text-align: center;
     line-height: 80px;
     text-decoration: none;
@@ -365,6 +412,10 @@ nav::before {
 .popular {
   &__info {
     position: absolute;
+    @media screen and (max-width: 767px) {
+      bottom: 13px;
+      width: 100%;
+    }
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
@@ -373,6 +424,10 @@ nav::before {
   &__title {
     font-family: "Josefin Sans", sans-serif;
     font-size: 1.225rem;
+    @media screen and (max-width: 767px) {
+      font-size: 0.6rem;
+      font-weight: 200;
+    }
     text-align: center;
     color: white;
     font-weight: 300;
@@ -381,6 +436,11 @@ nav::before {
 
   &__price {
     font-family: "Poppins", sans-serif;
+    @media screen and (max-width: 767px) {
+      font-size: 0.5rem;
+      font-weight: 200;
+      padding: 1px 0 9px;
+    }
     font-size: 0.825rem;
     font-weight: 500;
     text-align: center;
@@ -397,6 +457,13 @@ nav::before {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media screen and (max-width: 767px) {
+      width: 60px;
+      height: 20px;
+      font-size: 8px;
+      line-height: 18px;
+      border: 1px solid #a49959;
+    }
     width: 100px;
     height: 35px;
     text-align: center;
@@ -460,6 +527,10 @@ nav::before {
 
     &__info {
       position: absolute;
+      @media screen and (max-width: 767px) {
+        bottom: 25px;
+        width: 100%;
+      }
       bottom: 40px;
       left: 50%;
       transform: translateX(-50%);
@@ -471,6 +542,10 @@ nav::before {
 
     &__title {
       font-family: "Josefin Sans", sans-serif;
+      @media screen and (max-width: 767px) {
+        font-size: 1.3rem;
+        font-weight: 300;
+      }
       font-size: 2.5rem;
       text-align: center;
       color: white;
@@ -480,17 +555,28 @@ nav::before {
 
     &__price {
       font-family: "Poppins", sans-serif;
+      @media screen and (max-width: 767px) {
+        font-size: 0.8rem;
+        font-weight: 200;
+      }
       font-size: 1.225rem;
       font-weight: 500;
       text-align: center;
       margin: 0;
-      padding: 0px 0 50px;
+      padding: 0px 0 13px;
       color: #e6e6c2;
     }
     // button hover //
     &__details {
       border-radius: 5px;
       font-family: "Poppins", sans-serif;
+      @media screen and (max-width: 767px) {
+        width: 120px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 26px;
+        border: 1px solid #a49959;
+      }
       font-weight: 500;
       letter-spacing: 0.12rem;
       position: absolute;
@@ -584,6 +670,7 @@ nav::before {
 
     &-title {
       font-family: "Vollkorn", serif;
+
       font-size: 2.725rem;
       margin: 0;
       margin-top: -4.3rem;
@@ -666,6 +753,10 @@ nav::before {
   &__title {
     font-family: "Playfair Display", serif;
     font-size: 44px;
+    @media screen and (max-width: 767px) {
+      font-size: 35px;
+      margin: 30px 0;
+    }
     text-align: center;
     margin: 100px 0 40px 0;
   }
@@ -721,6 +812,11 @@ nav::before {
   }
 
   &__btn {
+    @media screen and (max-width: 767px) {
+      letter-spacing: 0.52em;
+      margin: 60px 0 100px 0;
+      padding: 1.5625rem 8.375rem;
+    }
     font-family: "Josefin Sans", sans-serif;
     font-size: 1rem;
     letter-spacing: 0.12em;
@@ -745,6 +841,9 @@ nav::before {
 
 .gs-partners {
   &__title {
+    @media screen and (max-width: 767px) {
+      margin: 30px 0 30px 0;
+    }
     font-family: "Playfair Display", serif;
     font-size: 44px;
     text-align: center;
@@ -766,8 +865,6 @@ nav::before {
 
 //=========FOOTER======//
 
-
-
 .gs-footer {
   text-align: center;
 
@@ -782,6 +879,10 @@ nav::before {
   }
 
   &-info {
+    @media screen and (max-width: 767px) {
+      font-size: 0.5rem;
+      text-align: right;
+    }
     color: white;
     font-family: "Brandon Grotesque Regular";
     font-weight: 200;
@@ -790,6 +891,9 @@ nav::before {
     font-size: 1rem;
 
     & i {
+      @media screen and (max-width: 767px) {
+        margin-right: 20px;
+      }
       margin-right: 15px;
       color: rgba(189, 185, 183, 0.849);
     }
@@ -803,6 +907,10 @@ nav::before {
   }
 
   &-wrapper {
+    @media screen and (max-width: 767px) {
+      position: relative;
+      margin: 15px 0 25px 0;
+    }
     display: flex;
     justify-content: space-between;
     margin: 75px 0;
@@ -821,6 +929,9 @@ nav::before {
     }
 
     & .gs-logo {
+      @media screen and (max-width: 767px) {
+        font-size: 1rem;
+      }
       text-decoration: none;
       font-family: "Brandon Grotesque Medium";
       color: black;
@@ -829,6 +940,11 @@ nav::before {
     }
   }
 
+  &-links {
+    @media screen and (max-width: 767px) {
+      margin: 10px;
+    }
+  }
   &-item {
     margin: 10px 0;
     &:hover {
@@ -846,6 +962,11 @@ nav::before {
 }
 
 .gs-form {
+  &-email {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
   &-email {
     text-align: left;
     & input {
@@ -880,8 +1001,45 @@ nav::before {
   }
 }
 
+.sm-show-form {
+  @media screen and (max-width: 767px) {
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    right: 25px;
+    & input {
+      border: none;
+      background-color: black;
+      width: 180px;
+      padding: 0.2rem 0 0.2rem 0.2rem;
+      color: gray;
+
+      &::placeholder {
+        text-transform: uppercase;
+        color: gray;
+        font-size: 0.4rem;
+      }
+    }
+    & button {
+      border: none;
+      background: black;
+      color: gray;
+      text-transform: uppercase;
+      padding: 0.3rem;
+      font-size: 0.8rem;
+    }
+    & .gs-form__title{
+      margin: 0;
+      font-size: 0.5rem;
+    }
+  }
+}
+
 //PARRALAX
 .parallax-window {
+  @media screen and (max-width: 767px) {
+    min-height: 300px;
+  }
   min-height: 600px;
   background: transparent;
 }
