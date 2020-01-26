@@ -9,7 +9,8 @@
   @media screen and (max-width: 767px) {
     .container {
       width: 100%;
-      position: relative; } }
+      position: relative;
+      overflow: hidden; } }
 
 /* Ba-grid  */
 .ba-row {
@@ -80,7 +81,7 @@
 1025-1400 : lg
 >1400 xl
 */
-@media (max-width: 420px) {
+@media (max-width: 426px) {
   .ba-col-sm-12 {
     width: 100%; }
   .ba-col-sm-11 {

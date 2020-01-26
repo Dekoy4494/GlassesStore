@@ -14,6 +14,22 @@ $(document).ready(function () {
     dots: true,
   });
 
+//Hide nav
+  $('.sm-show').on('click', function(){
+    $('.gs-menu').toggle();
+    $('.sm-show i').toggleClass('fas fa-chevron-down')
+    $('.sm-show i').toggleClass('fas fa-chevron-up')
+});
+
+$(window).on('resize', function() {
+    
+    if($(this).width() > 767 ) {
+        $('.gs-menu').show();
+    } else {
+        $('.gs-menu').hide();
+    }
+})
+
 });
 
 $(document).ready(function () {
@@ -43,8 +59,7 @@ $(document).ready(function () {
 });
 
 
-
-//hover effect logo//
+//============HOVER LOGO============== //
 const text = 'KALLYAS';
 
 // this function turns a string into an array

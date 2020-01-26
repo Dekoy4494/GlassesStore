@@ -10,6 +10,9 @@
   .gs-header__top {
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 767px) {
+      .gs-header__top {
+        position: relative; } }
 
 q::after,
 q::before {
@@ -32,6 +35,7 @@ q::before {
   text-align: center;
   position: relative;
   top: 50%;
+  left: 5%;
   transform: translateY(-100%); }
   @media screen and (max-width: 767px) {
     #text {
@@ -98,6 +102,9 @@ q::before {
 
 .gs-search {
   margin-left: auto; }
+  @media screen and (max-width: 767px) {
+    .gs-search {
+      display: none; } }
   .gs-search-form {
     position: absolute;
     top: 0;
@@ -108,17 +115,39 @@ q::before {
     transform: translateY(-100%);
     visibility: hidden;
     transition: transform 0.3s; }
+    .gs-search-form input {
+      color: black;
+      width: 100%;
+      border: none; }
     .gs-search-form.open {
       top: 30%;
-      left: -40%;
       transform: translateY(0);
-      visibility: visible;
-      box-shadow: 0px 9px 20px -6px rgba(0, 0, 0, 0.5); }
+      visibility: visible; }
   .gs-search__btn {
-    margin-left: auto;
+    margin-left: -30px;
     border: none;
     outline: none;
     background: none; }
+
+.gs-search-form-sm {
+  display: none; }
+  @media screen and (max-width: 767px) {
+    .gs-search-form-sm {
+      display: flex;
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translate(-50%, 0); }
+      .gs-search-form-sm button {
+        border: none;
+        outline: none;
+        background: none;
+        color: #a49959;
+        padding-right: 10px; }
+      .gs-search-form-sm input {
+        width: 100%;
+        border: none;
+        padding-left: 5px; } }
 
 .personal__Cart, .personal__account {
   margin-left: 50px; }
@@ -146,8 +175,14 @@ q::before {
   justify-content: center;
   padding: 0px 0 25px 0;
   margin: 0; }
+  @media screen and (max-width: 767px) {
+    .gs-menu {
+      flex-direction: column; } }
   .gs-menu__item + .gs-menu__item {
     margin-left: 50px; }
+    @media screen and (max-width: 767px) {
+      .gs-menu__item + .gs-menu__item {
+        margin-left: 0; } }
   .gs-menu__link {
     color: white;
     text-decoration: none;
@@ -159,6 +194,23 @@ nav {
   position: relative;
   display: flex;
   justify-content: center; }
+  @media screen and (max-width: 767px) {
+    nav {
+      display: block; } }
+
+nav .sm-show {
+  display: none; }
+  @media screen and (max-width: 767px) {
+    nav .sm-show {
+      display: block;
+      padding: 20px 0 20px 0;
+      text-align: center;
+      background: none;
+      border: none;
+      outline: none;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0); } }
 
 nav::before {
   content: "";
@@ -170,6 +222,10 @@ nav::before {
   right: 0rem;
   background-color: rgba(255, 255, 255, 0.25);
   overflow: hidden; }
+  @media screen and (max-width: 767px) {
+    nav::before {
+      bottom: 0;
+      top: 10px; } }
 
 .gs-topsales__wrapper {
   text-align: center;
@@ -450,12 +506,13 @@ nav::before {
     font-weight: 500;
     text-align: center;
     margin: 0;
-    padding: 0px 0 13px;
+    padding: 25px 0 40px;
     color: #e6e6c2; }
     @media screen and (max-width: 767px) {
       .popular-bigblock__price {
         font-size: 0.8rem;
-        font-weight: 200; } }
+        font-weight: 200;
+        padding: 0px 0 13px; } }
   .popular-bigblock__details {
     border-radius: 5px;
     font-family: "Poppins", sans-serif;
@@ -789,32 +846,34 @@ nav::before {
   font-weight: 300;
   font-size: 0.8rem; }
 
-@media screen and (max-width: 767px) {
-  .sm-show-form {
-    display: block;
-    position: absolute;
-    bottom: -5px;
-    right: 25px; }
-    .sm-show-form input {
-      border: none;
-      background-color: black;
-      width: 180px;
-      padding: 0.2rem 0 0.2rem 0.2rem;
-      color: gray; }
-      .sm-show-form input::placeholder {
-        text-transform: uppercase;
+.sm-show-form {
+  display: none; }
+  @media screen and (max-width: 767px) {
+    .sm-show-form {
+      display: block;
+      position: absolute;
+      bottom: -5px;
+      right: 25px; }
+      .sm-show-form input {
+        border: none;
+        background-color: black;
+        width: 180px;
+        padding: 0.2rem 0 0.2rem 0.2rem;
+        color: gray; }
+        .sm-show-form input::placeholder {
+          text-transform: uppercase;
+          color: gray;
+          font-size: 0.4rem; }
+      .sm-show-form button {
+        border: none;
+        background: black;
         color: gray;
-        font-size: 0.4rem; }
-    .sm-show-form button {
-      border: none;
-      background: black;
-      color: gray;
-      text-transform: uppercase;
-      padding: 0.3rem;
-      font-size: 0.8rem; }
-    .sm-show-form .gs-form__title {
-      margin: 0;
-      font-size: 0.5rem; } }
+        text-transform: uppercase;
+        padding: 0.3rem;
+        font-size: 0.8rem; }
+      .sm-show-form .gs-form__title {
+        margin: 0;
+        font-size: 0.5rem; } }
 
 .parallax-window {
   min-height: 600px;
