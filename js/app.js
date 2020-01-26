@@ -135,7 +135,7 @@ function validate(form_id, email) {
 //ajax
 
 let ajax = new XMLHttpRequest();
-
+debugger;
 ajax.onreadystatechange = function () {
   if (ajax.readyState === 4) {
     document.getElementById('responce').innerHTML = ajax.responseText;
