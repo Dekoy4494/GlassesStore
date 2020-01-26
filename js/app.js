@@ -122,9 +122,18 @@ outputLayers.then(() => {
 
 //email validator 
 
-function validate(form_id, email) {
+function validate(form_id, email2) {
   var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
   var address = document.forms[form_id].elements[email].value;
+  if (reg.test(address) == false) {
+    alert('Enter correct e-mail');
+    return false;
+  }
+}
+
+function validate(form_id2, email2) {
+  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  var address = document.forms[form_id2].elements[email2].value;
   if (reg.test(address) == false) {
     alert('Enter correct e-mail');
     return false;
@@ -135,7 +144,7 @@ function validate(form_id, email) {
 //ajax
 
 let ajax = new XMLHttpRequest();
-debugger;
+
 ajax.onreadystatechange = function () {
   if (ajax.readyState === 4) {
     document.getElementById('responce').innerHTML = ajax.responseText;
