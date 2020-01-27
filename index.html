@@ -180,7 +180,7 @@
 
         <section class="gs-popular">
             <div class="ba-row gs-popular__wrapper">
-                <div class="popular-bigblock ba-col-6 wow slideInLeft">
+                <div class="popular-bigblock ba-col-6 wow fadeIn">
                     <img src="img/catEye.jpg" alt="catEye">
                     <div class="popular-bigblock__info">
                         <h2 class="popular-bigblock__title">
@@ -198,7 +198,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="popular-blocks ba-col-6 wow slideInRight">
+                <div class="popular-blocks ba-col-6 wow fadeIn">
                     <div class="ba-row">
                         <div class="popular-smallblock ba-col-6 ">
                             <img src="img/RoundGlasses.jpg" alt="RoundGlasses">
@@ -439,7 +439,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="" id="responce"></div>
+                <div class="" id="responce ba-row wow fadeIn slower ba-row"></div>
                 
                 <button id="responce_btn" onclick="loadMore()" class="gs-arrivals__btn" type="submit">LOAD MORE</button>
             
@@ -484,7 +484,9 @@
 
     <footer class="gs-footer">
         
-        <div class="parallax-window" data-parallax="scroll" data-image-src="./img/footer/banner.jpg"></div>
+        <div class="gs-footer-banner">
+            <img src="img/footer/banner.jpg" alt="banner">
+        </div>
 
         <div class="gs-footer-bot">
             <h2 class="gs-footer-info">
@@ -578,11 +580,13 @@
                     <button value="submit" class="gs-form-btn">subscribe</button>
                 </form>
             </div>
-            <form id="form_id2" action="" method="post" onsubmit="javascript:return validate('form_id','email');"
+            <form id="form_id2" action="" method="post" onsubmit="javascript:return validate('form_id2','email2');"
                     class="gs-form-email sm-show-form">
                     <p class="gs-form__title">subscribe to our newsletter</p>
+                    <div class="gs-form-wrapper">
                     <input id="email2" type="text" placeholder="your.address@email.com">
                     <button value="submit" class="gs-form-btn">subscribe</button>
+                </div>
                 </form>
         </div>
     </footer>
@@ -590,7 +594,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    
     <script src='js/app.js'></script>
 </body>
 

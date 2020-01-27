@@ -98,7 +98,9 @@ q::before {
 #showSearch {
   background: none;
   border: none;
-  outline: none; }
+  outline: none;
+  width: 32px;
+  height: 23px; }
 
 .gs-search {
   margin-left: auto; }
@@ -748,13 +750,13 @@ nav::before {
 
 .gs-footer {
   text-align: center; }
-  .gs-footer-baner {
+  .gs-footer-banner {
     padding-top: 80px;
     height: 700px;
     overflow: hidden; }
-    .gs-footer-baner img {
-      width: 100%;
-      margin-top: -50px; }
+    .gs-footer-banner img {
+      display: block;
+      width: 100%; }
   .gs-footer-info {
     color: white;
     font-family: "Brandon Grotesque Regular";
@@ -869,19 +871,16 @@ nav::before {
         border: none;
         background: black;
         color: gray;
-        text-transform: uppercase;
+        text-transform: capitalize;
         padding: 0.3rem;
         font-size: 0.8rem; }
+      .sm-show-form .gs-form-wrapper {
+        display: flex;
+        justify-content: space-between; }
       .sm-show-form .gs-form__title {
         margin: 0;
-        font-size: 0.5rem; } }
-
-.parallax-window {
-  min-height: 600px;
-  background: transparent; }
-  @media screen and (max-width: 767px) {
-    .parallax-window {
-      min-height: 300px; } }
+        font-size: 0.5rem;
+        text-transform: capitalize; } }
 
 .gs-menu__item {
   position: relative;
