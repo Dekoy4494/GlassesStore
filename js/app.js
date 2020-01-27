@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 //Hide nav
   $('.sm-show').on('click', function(){
-    $('.gs-menu').toggle();
+    $('.gs-menu').toggleClass('sm-hide');
     $('.sm-show i').toggleClass('fas fa-chevron-down')
     $('.sm-show i').toggleClass('fas fa-chevron-up')
 });
@@ -24,9 +24,9 @@ $(document).ready(function () {
 $(window).on('resize', function() {
     
     if($(this).width() > 767 ) {
-        $('.gs-menu').show();
-    } else {
         $('.gs-menu').hide();
+    } else {
+        $('.gs-menu').show();
     }
 })
 

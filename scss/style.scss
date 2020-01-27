@@ -183,7 +183,7 @@ $second_color: white;
     display: flex;
     position: absolute;
     bottom: 5px;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, 0);
     & button {
       border: none;
@@ -254,6 +254,12 @@ $second_color: white;
     font-family: "Brandon Grotesque Regular";
     font-size: 0.875rem;
     letter-spacing: 0.12em;
+  }
+}
+
+.sm-hide{
+  @media screen and (max-width: 767px) {
+   display: none;
   }
 }
 
@@ -955,8 +961,7 @@ nav::before {
   text-align: center;
 
   &-banner {
-    padding-top: 80px;
-    height: 700px;
+    
     overflow: hidden;
     & img {
       display: block;
@@ -1101,11 +1106,14 @@ nav::before {
       width: 180px;
       padding: 0.2rem 0 0.2rem 0.2rem;
       color: gray;
+      border-radius: 5px;
+    margin-right: 5px;
 
       &::placeholder {
         text-transform: uppercase;
         color: gray;
-        font-size: 0.4rem;
+        font-size: 0.5rem;
+        line-height: 0.5rem;
       }
     }
     & button {
@@ -1114,7 +1122,9 @@ nav::before {
       color: gray;
       text-transform: capitalize;
       padding: 0.3rem;
-      font-size: 0.8rem;
+      font-size: 0.5rem;
+      margin-right: 10px;
+      border-radius: 5px;
     }
 
     & .gs-form-wrapper{
@@ -1125,6 +1135,7 @@ nav::before {
       margin: 0;
       font-size: 0.5rem;
       text-transform: capitalize;
+      padding-top: 5px;
     }
   }
 }

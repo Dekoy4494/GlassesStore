@@ -138,7 +138,7 @@ q::before {
       display: flex;
       position: absolute;
       bottom: 5px;
-      left: 50%;
+      left: 45%;
       transform: translate(-50%, 0); }
       .gs-search-form-sm button {
         border: none;
@@ -192,6 +192,10 @@ q::before {
     font-family: "Brandon Grotesque Regular";
     font-size: 0.875rem;
     letter-spacing: 0.12em; }
+
+@media screen and (max-width: 767px) {
+  .sm-hide {
+    display: none; } }
 
 nav {
   position: relative;
@@ -751,8 +755,6 @@ nav::before {
 .gs-footer {
   text-align: center; }
   .gs-footer-banner {
-    padding-top: 80px;
-    height: 700px;
     overflow: hidden; }
     .gs-footer-banner img {
       display: block;
@@ -862,25 +864,31 @@ nav::before {
         background-color: black;
         width: 180px;
         padding: 0.2rem 0 0.2rem 0.2rem;
-        color: gray; }
+        color: gray;
+        border-radius: 5px;
+        margin-right: 5px; }
         .sm-show-form input::placeholder {
           text-transform: uppercase;
           color: gray;
-          font-size: 0.4rem; }
+          font-size: 0.5rem;
+          line-height: 0.5rem; }
       .sm-show-form button {
         border: none;
         background: black;
         color: gray;
         text-transform: capitalize;
         padding: 0.3rem;
-        font-size: 0.8rem; }
+        font-size: 0.5rem;
+        margin-right: 10px;
+        border-radius: 5px; }
       .sm-show-form .gs-form-wrapper {
         display: flex;
         justify-content: space-between; }
       .sm-show-form .gs-form__title {
         margin: 0;
         font-size: 0.5rem;
-        text-transform: capitalize; } }
+        text-transform: capitalize;
+        padding-top: 5px; } }
 
 .gs-menu__item {
   position: relative;
