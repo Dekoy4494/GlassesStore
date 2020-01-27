@@ -21,14 +21,7 @@ $(document).ready(function () {
     $('.sm-show i').toggleClass('fas fa-chevron-up')
 });
 
-$(window).on('resize', function() {
-    
-    if($(this).width() > 767 ) {
-        $('.gs-menu').hide();
-    } else {
-        $('.gs-menu').show();
-    }
-})
+
 
 });
 
